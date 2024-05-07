@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Asignaturas View</title>
+</head>
+<body>
+  <h1>Asignaturas View</h1>
+  <table>
+    <tr th:each="asignatura : ${asignaturas}">
+      <td th:text="${asignatura.nombreAsignatura}">Asignatura</td>
+      <td th:text="${asignatura.descripcion}">Descripcion</td>
+      <td th:text="${asignatura.salon}">Salon</td>
+      <td th:text="${asignatura.horarioInicio}">Horario Inicio</td>
+      <td th:text="${asignatura.horarioFin}">Horario Fin</td>
+      <td th:text="${asignatura.docenteEncargado.nombreDocente}">Docente Encargado</td>
+    </tr>
+  </table>
+</body>
+</html>
